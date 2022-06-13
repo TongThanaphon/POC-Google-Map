@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+#map {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 10px;
+}
+
+.map-container-disable {
+  display: none;
+}
+
+.map-container-enable {
+  display: flex;
+
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display-result {
+  text-align: center;
+}

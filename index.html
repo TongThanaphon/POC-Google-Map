@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="./style.css"></link>
+    <script src="./script.js" defer></script>
+    <title>POC Google Map</title>
+</head>
+<body>
+    <div class="container">
+        <button onclick="handleClickAddressBox()">Open Map</button>
+
+        <div id="address-box"></div>
+        <div id="lat"></div>
+        <div id="lng"></div>
+
+       <div class="map-container-disable" id="map-container">
+            <div>
+                <input placeholder="search" id="search-input" />
+                <button onclick="handleSubmitSearch()">submit search</button>
+                <button onclick="handleConfirm()">Confirm</button>
+            </div>
+            <div class="display-result" id="display-result">-</div>
+            <div style="width: 600px; height: 600px">
+                <div id="map"></div>
+            </div>
+       </div>
+    </div>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2H0SO85XGT6TKqs-Vv255ASQFCXJgH3k&v=weekly&libraries=places"
+      defer
+    ></script>
+</body>
+</html>
