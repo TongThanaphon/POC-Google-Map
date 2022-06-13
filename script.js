@@ -8,7 +8,7 @@ const displayResultEle = document.getElementById("display-result");
 const latEle = document.getElementById("lat");
 const lngEle = document.getElementById("lng");
 
-const googleMapApiKey = env.GOOGLE_MAP_API_KEY;
+const googleMapApiKey = "AIzaSyB2H0SO85XGT6TKqs-Vv255ASQFCXJgH3k";
 const options = {
   fields: ["formatted_address", "geometry", "name"],
   strictBounds: false,
